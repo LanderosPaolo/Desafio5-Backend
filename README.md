@@ -26,7 +26,7 @@
 
 Este endpoint devuelve una lista de joyas. Puedes usar los siguientes parámetros de consulta para personalizar la respuesta:
 
-    limits: Número máximo de joyas a devolver (por defecto: 2).
+    limits: Número máximo de joyas a devolver (por defecto: 3).
     order_by: Ordenar las joyas por un campo específico, seguido de _ASC o _DESC para especificar la dirección de ordenación (por defecto: id_ASC).
     page: Número de página para paginar los resultados (por defecto: 1).
 
