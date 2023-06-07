@@ -79,9 +79,11 @@ const getJoyasByFilter = async ({ precio_max, precio_min, categoria, metal, stoc
 }
 
 const reportMiddleware = (req, res, next) => {
-    console.log('la función para obtener joyas ha sido procesada');
-    console.log(`Solicitud recibida: ${req.method} ${req.originalUrl}`)
-    console.log(`Parámetros de consulta (req.query): ${JSON.stringify(req.query)}`)
+    const params = JSON.stringify(req.query);
+    const url = req.url;
+    console.log(`Hoy ${new Date()} 
+    se ha recibido una consulta en la ruta ${url} 
+    con los parametros: ${params}`);
     next();
 };
 

@@ -20,7 +20,7 @@ app.get('/joyas', reportMiddleware,  async (req, res) => {
     }
 })
 
-app.get('/joyas/filtros', async (req, res) => {
+app.get('/joyas/filtros', reportMiddleware , async (req, res) => {
     try {
         const queryString = req.query;
         const joyas = await getJoyasByFilter(queryString);
